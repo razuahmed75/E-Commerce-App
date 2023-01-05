@@ -57,6 +57,7 @@ dependencies:
   firebase_storage: ^11.0.8
   badges: ^2.0.3
   flutter_slidable: ^2.0.0
+  device_preview: ^1.1.0
   
 
 dev_dependencies:

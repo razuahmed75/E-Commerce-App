@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:online_shop_app/firebase/Auth_services.dart';
 import 'package:online_shop_app/ui/signup/components/circle_tile.dart';
@@ -9,7 +8,6 @@ import 'package:online_shop_app/utils/myButton.dart';
 import '../../constants/my_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../logic/close_app_dialog.dart';
-import '../../utils/alert_dialog.dart';
 import '../../utils/myText_field.dart';
 import 'components/goToSingInPage.dart';
 import 'components/header.dart';
@@ -56,7 +54,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 header(),
                 Expanded(
                   child: Container(
-                    width: ScreenUtil().screenWidth,
+                    width: double.maxFinite,
                     decoration: BoxDecoration(
                       color: white,
                       borderRadius: BorderRadius.vertical(

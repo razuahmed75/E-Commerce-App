@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:online_shop_app/constants/my_colors.dart';
 import 'package:online_shop_app/ui/bottom_nav_pages/home/components/header.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../../firebase/Auth_services.dart';
 import 'components/categories.dart';
 import 'components/productList.dart';
 import 'components/searchBar.dart';
@@ -130,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget buildImage(String urlImage) => ClipRRect(
         borderRadius: BorderRadius.circular(8.w),
         child: Container(
-          width: 0.85.sw,
+          width: double.maxFinite,
           color: Colors.blue.shade50,
           child: Image.network(
             urlImage,

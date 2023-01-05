@@ -20,8 +20,8 @@ class SearchBarWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            width: 0.85.sw,
+          Expanded(
+            // width: 0.85.sw,
             child: TextFormField(
               readOnly: true,
               onTap: () => Get.to(() => SearchPage()),

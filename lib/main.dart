@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:online_shop_app/logic/profile_manager.dart';
@@ -7,6 +8,7 @@ import 'package:online_shop_app/theme.dart';
 import 'package:provider/provider.dart';
 import 'authPage.dart';
 import 'package:get/get.dart';
+import 'package:device_preview/device_preview.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

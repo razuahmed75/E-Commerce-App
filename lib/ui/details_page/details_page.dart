@@ -153,6 +153,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                       }
                                       return Text('');
                                     }),
+                                SizedBox(width: 10.w),
 
                                 /// buy now button
                                 buildBuyNowButton(onPressed: () {}),

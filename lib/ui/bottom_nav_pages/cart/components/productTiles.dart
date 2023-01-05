@@ -29,7 +29,7 @@ class ProductItemTiles extends StatelessWidget {
             ),
           ],
         ),
-        width: ScreenUtil().screenWidth,
+        width: double.maxFinite,
         height: 80.h,
         child: ListTile(
           leading: Image.network(

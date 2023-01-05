@@ -10,11 +10,12 @@ class Footer extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          width: 0.4.sw,
-          height: 0.5.h,
-          decoration: BoxDecoration(
-            color: Colors.grey[400],
+        Expanded(
+          child: Container(
+            height: 0.5.h,
+            decoration: BoxDecoration(
+              color: Colors.grey[400],
+            ),
           ),
         ),
         SizedBox(width: 4.w),
@@ -24,11 +25,12 @@ class Footer extends StatelessWidget {
               color: Colors.blue[300], fontWeight: FontWeight.bold),
         ),
         SizedBox(width: 4.w),
-        Container(
-          width: 0.4.sw,
-          height: 0.5.h,
-          decoration: BoxDecoration(
-            color: Colors.grey[400],
+        Expanded(
+          child: Container(
+            height: 0.5.h,
+            decoration: BoxDecoration(
+              color: Colors.grey[400],
+            ),
           ),
         ),
       ],

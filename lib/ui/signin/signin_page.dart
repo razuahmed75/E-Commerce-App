@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:online_shop_app/firebase/Auth_services.dart';
 import 'package:online_shop_app/ui/forgot_password/forgot_password.dart';
 import 'package:online_shop_app/ui/signin/components/navigate_to_signup.dart';
 import 'package:online_shop_app/utils/myButton.dart';
-import 'package:online_shop_app/utils/toast.dart';
 import '../../constants/my_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../logic/close_app_dialog.dart';
@@ -58,7 +56,7 @@ class _SignInPageState extends State<SignInPage> {
                 header(),
                 Expanded(
                   child: Container(
-                    width: ScreenUtil().screenWidth,
+                    width: double.infinity,
                     decoration: BoxDecoration(
                       color: white,
                       borderRadius: BorderRadius.vertical(

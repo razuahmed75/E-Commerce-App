@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
 class SlidableWidget extends StatelessWidget {
@@ -18,32 +19,35 @@ class SlidableWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Slidable(
-      endActionPane: ActionPane(motion: DrawerMotion(), children: [
-        SlidableAction(
-          autoClose: true,
-          onPressed: onPressed,
-          label: 'Delete',
-          icon: Icons.delete,
-          backgroundColor: Colors.red,
-        ),
-        SlidableAction(
-          onPressed: (context) {},
-          label: 'Share',
-          icon: Icons.share,
-          backgroundColor: Colors.green,
-        ),
-      ]),
-      startActionPane:
-          ActionPane(extentRatio: 0.4, motion: StretchMotion(), children: [
-        SlidableAction(
-          onPressed: toLeftSlidePressed,
-          label: toLeftSideLabel,
-          icon: toLeftSideIconData,
-          backgroundColor: Color(0xFFFF6464),
-        ),
-      ]),
-      child: child,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20).r,
+      child: Slidable(
+        endActionPane: ActionPane(motion: StretchMotion(), children: [
+          SlidableAction(
+            onPressed: (context) {},
+            icon: Icons.share,
+            backgroundColor: Colors.grey.shade800,
+            borderRadius: BorderRadius.circular(12.r),
+          ),
+          SlidableAction(
+            autoClose: true,
+            onPressed: onPressed,
+            icon: Icons.delete,
+            backgroundColor: Color(0xFFFF6464),
+            borderRadius: BorderRadius.circular(12.r),
+          ),
+        ]),
+        startActionPane:
+            ActionPane(extentRatio: 0.3, motion: StretchMotion(), children: [
+          SlidableAction(
+            onPressed: toLeftSlidePressed,
+            icon: toLeftSideIconData,
+            backgroundColor: Color(0xFFFF6464),
+            borderRadius: BorderRadius.circular(12.r),
+          ),
+        ]),
+        child: child,
+      ),
     );
   }
 }

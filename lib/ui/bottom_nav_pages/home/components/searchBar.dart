@@ -16,12 +16,11 @@ class SearchBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 18).r,
+      padding: const EdgeInsets.symmetric(horizontal: 26).w,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
-            // width: 0.85.sw,
             child: TextFormField(
               readOnly: true,
               onTap: () => Get.to(() => SearchPage()),

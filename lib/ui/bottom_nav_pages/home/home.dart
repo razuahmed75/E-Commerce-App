@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Padding carousel_Slider() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24).r,
+      padding: const EdgeInsets.symmetric(horizontal: 26).r,
       child: AspectRatio(
           aspectRatio: 2 / 1.1,
           child: StreamBuilder(

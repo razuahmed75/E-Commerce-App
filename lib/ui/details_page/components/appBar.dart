@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../constants/my_colors.dart';
 import '../../../constants/svg/svg.dart';
+import 'package:badges/badges.dart';
 import '../../../utils/cart_length_checker.dart';
 import '../../bottom_nav_pages/cart/cart.dart';
 import '../../search_page/search_page.dart';
@@ -33,7 +34,7 @@ AppBar buildAppbar() {
             Get.to(() => CartScreen());
           },
           icon: Badge(
-              label: Text(Cartlength.checkLength == null
+              badgeContent: Text(Cartlength.checkLength == null
                   ? 'o'
                   : Cartlength.checkLength.toString()),
               child: SvgPicture.asset(kCart, color: kTextColor))),

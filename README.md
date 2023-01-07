@@ -1,16 +1,7 @@
-# online_shop_app
+# E-Commerce-App Outputs
+fully responsive, and used firebase as backened
 
-A new Flutter project.
 
-## Getting Started
+![E-shop-1](https://user-images.githubusercontent.com/99271821/211155937-b1a11a41-d2e1-452a-ac24-f95c8334d3e3.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![E-shop-2](https://user-images.githubusercontent.com/99271821/211155944-d045d6d7-4aaa-40ca-aadb-c00368e3413b.png)
